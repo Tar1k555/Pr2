@@ -38,4 +38,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <button type="submit">Увійти</button>
     </form>
 </body>
-</html>

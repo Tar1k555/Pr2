@@ -43,4 +43,3 @@ if (isset($_SESSION['user'])) {
         </button>
     </div>
 </body>
-</html>
