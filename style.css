@@ -1,5 +1,5 @@
 body{
-    background-image:url("img/backgroundimg.jpg");
+    background-image:url("img/backgroungimg.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -9,34 +9,71 @@ body{
 
 }
 .header-container {
-    background-color: azure; /* колір фону прямокутника */
-    color: black;/*колір назви автосервісу*/
-    padding: 20px;
+    background-color: black; /* колір фону прямокутника */
+    color: white;/*колір назви автосервісу*/
+    padding: 10px;
     text-align: center;
     border-radius: 30px;
-    width: 97%;
+    width: 99%;
     margin-bottom: 20px;
     justify-content: space-between;
     display:flex;
 }
 
-.dynamic-button {
+/*  "Послуги" */
+.service-button {
+    position: fixed;
+    top: 100px;
+    left: 20px;
     padding: 10px 20px;
-    background-color: black;/*колір  кнопки */
-    color: white;/*колір тексту кнопки */
+    background-color: white;
+    color: black;
     border: none;
-    cursor: pointer;
-    font-size: 16px;
     border-radius: 5px;
-    margin: 0 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
-.dynamic-button:hover {
+/*  "Товари" */
+.product-button {
+    position: fixed;
+    top: 160px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*  "Про нас" */
+.about-button {
+    position: fixed;
+    top: 220px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.service-button:hover,.product-button:hover,.about-button:hover {
     transform: scale(1.1);
     background-color: blue;/*колір кнопки після наведення курсору на неї*/
 }
-
+.service-button{
+    top:50px;
+    left:350px;
+}
+.product-button{
+    top:50px;
+    left:450px;
+}
+.about-button{
+    top:50px;
+    left:550px;
+}
 /* Кнопка авторизації */
 #authButton {
     position: fixed;
@@ -53,7 +90,7 @@ body{
 }
 /* Фон для сторінки авторизації */
 .auth-page {
-    background-image: url("img/authbackgroundimg.jpg"); 
+    background-image: url("img/backgroundauthimg.jpg"); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -79,12 +116,12 @@ body{
 }
 
 .auth-form input {
-    width: 100%; /* Займає всю ширину контейнера */
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Виправляє вихід за межі */
+    box-sizing: border-box;
 }
 
 .auth-form button {
@@ -111,5 +148,46 @@ body{
     background-color: #f4f4f4;
     border-radius: 10px;
     color: black;
+}
+/* послуги(конт)*/
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Послуги */
+.service {
+    background-image: url(img/posbackimg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+/* Вибір авто */
+#vehicle-selection {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    font-size: 16px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
 }
 }
