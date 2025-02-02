@@ -1,0 +1,115 @@
+body{
+    background-image:url("img/backgroundimg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+.header-container {
+    background-color: azure; /* колір фону прямокутника */
+    color: black;/*колір назви автосервісу*/
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    width: 97%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    display:flex;
+}
+
+.dynamic-button {
+    padding: 10px 20px;
+    background-color: black;/*колір  кнопки */
+    color: white;/*колір тексту кнопки */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dynamic-button:hover {
+    transform: scale(1.1);
+    background-color: blue;/*колір кнопки після наведення курсору на неї*/
+}
+
+/* Кнопка авторизації */
+#authButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;/*колір кнопки*/
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Фон для сторінки авторизації */
+.auth-page {
+    background-image: url("img/authbackgroundimg.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Форма авторизації */
+.auth-form {
+    background: rgba(0, 0, 0, 0.7); /* Темний прозорий фон */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    width: 300px;
+}
+
+.auth-form h2 {
+    color: white;
+}
+
+.auth-form input {
+    width: 100%; /* Займає всю ширину контейнера */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Виправляє вихід за межі */
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background-color: #45a049;
+}
+
+#authButton:hover {
+    background-color: #45a049;
+
+.content-section{
+    display:none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    color: black;
+}
+}
